@@ -5,7 +5,7 @@ const roomController = {};
     
     try{
         
-        res.status(200).json({"hellow":"word"});
+        res.status(200).json({"hellow":"word", "value":process.env.EXAMPLE_TIMES});
     }
     catch(err){
         next(err)
